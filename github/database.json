@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "program_version": "0.2.4",
+  "file": "6aus45.sqlite.gz",
+  "sha256": "344bba320bea2fbfa7b52e7e19b86f7f56c1ea8f97d118ef541efad2bd5a8141",
+  "compressed_bytes": 75434566,
+  "sqlite_bytes": 350343168,
+  "counts": {
+    "combinations": 8145060,
+    "joker_numbers": 1000000,
+    "draws": 7271,
+    "quotes": 59771,
+    "tips": 0,
+    "series": 0
+  }
+}

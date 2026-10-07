@@ -1,0 +1,94 @@
+{
+  "program_id": "sechsaus45",
+  "name": "6aus45",
+  "authors": [],
+  "license": "GPL-3.0-only",
+  "image": "assets/6aus45.png",
+  "update_url": "",
+  "source_url": "",
+  "settings": [],
+  "profiles_enabled": false,
+  "demo_enabled": false,
+  "deb": {
+    "package": "6aus45",
+    "command": "6aus45",
+    "main": "6aus45.py",
+    "maintainer": "Josef",
+    "description": "Reusable Python desktop application",
+    "categories": "Utility;",
+    "depends": [
+      "python3 (>= 3.10)",
+      "python3-gi",
+      "gir1.2-gtk-4.0",
+      "python3-requests",
+      "python3-bs4",
+      "libx11-6",
+      "util-linux"
+    ],
+    "runtime": [
+      "6aus45.py",
+      "VERSION",
+      "projekt.json",
+      "LICENSE",
+      "modules",
+      "assets",
+      "lang/de.json",
+      "lang/en.json",
+      "help/de",
+      "help/en"
+    ]
+  },
+  "tool_info": [
+    {
+      "name": "Python",
+      "kind": "python",
+      "apt": "python3"
+    },
+    {
+      "name": "GTK",
+      "kind": "gtk",
+      "apt": "gir1.2-gtk-4.0"
+    },
+    {
+      "name": "requests",
+      "kind": "module",
+      "module": "requests",
+      "apt": "python3-requests"
+    },
+    {
+      "name": "Beautiful Soup",
+      "kind": "module",
+      "module": "bs4",
+      "distribution": "beautifulsoup4",
+      "apt": "python3-bs4"
+    },
+    {
+      "name": "pdftotext",
+      "kind": "command",
+      "command": "pdftotext",
+      "version_args": [
+        "-v"
+      ],
+      "apt": "poppler-utils"
+    }
+  ],
+  "watermark": "assets/watermark.png",
+  "distribution_policy": {
+    "private_directories": [
+      "sources",
+      ".config",
+      "tests"
+    ],
+    "exclude_globs": [
+      "sources/**",
+      ".config/**",
+      "tests/**",
+      "data/*.before-*.sqlite",
+      "data/before-restore-*.sqlite",
+      "**/__pycache__/**",
+      "**/*.pyc"
+    ],
+    "source_archives_public": false,
+    "database_draws_and_quotes_public": true
+  }
+}
